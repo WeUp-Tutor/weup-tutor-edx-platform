@@ -24,7 +24,7 @@ def add_info_to_notification_config(config_obj):
     Add info of all notification types
     """
 
-    config = config_obj['notification_preference_config']
+    config = config_obj.get('notification_preference_config', config_obj)
     for notification_app, app_prefs in config.items():
         notification_types = app_prefs.get('notification_types', {})
         for notification_type, type_prefs in notification_types.items():
