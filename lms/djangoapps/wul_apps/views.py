@@ -7,6 +7,6 @@ def wul_apps_dummyview(request):
     """
     return JsonResponse({
         "status": "ok",
-        "message": "Custom Fork Works",
+        "message": "Custom Fork Works !!!",
         "user": request.user.username if request.user.is_authenticated else "anonymous"
     })
