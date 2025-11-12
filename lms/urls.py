@@ -1053,3 +1053,9 @@ urlpatterns += [
 urlpatterns += [
     path('api/notifications/', include('openedx.core.djangoapps.notifications.urls')),
 ]
+
+
+
+urlpatterns += [
+    path('wul_apps/', include('lms.djangoapps.wul_apps.urls')),
+]
